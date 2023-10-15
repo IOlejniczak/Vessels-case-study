@@ -13,8 +13,8 @@ import { VesselsViewComponent } from './vessels-view/vessels-view.component';
 const routes: Routes = [
     {
         path: '',
-        component: VesselsViewComponent
-    }
+        component: VesselsViewComponent,
+    },
 ];
 
 @NgModule({
@@ -29,7 +29,7 @@ const routes: Routes = [
         VesselsViewComponent,
     ],
     exports: [
-        RouterModule
+        RouterModule,
     ],
 })
 export class FeatureVesselsModule { }

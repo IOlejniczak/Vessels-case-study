@@ -1,9 +1,8 @@
-import { Component, OnInit, ViewChild, inject } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { GridOptions } from 'ag-grid-community';
 import { Observable } from 'rxjs';
 
-import { VesselsFacade } from '@angular-monorepo/data-access';
-import { Vessel } from 'libs/data-access/src/lib/api-models';
+import { VesselsFacade, Vessel } from '@angular-monorepo/data-access';
 import { AgGridAngular } from 'ag-grid-angular';
 
 
@@ -29,7 +28,7 @@ export class VesselsViewComponent implements OnInit {
                 floatingFilter: true,
                 sortable: true,
             },
-            columnDefs: ['name', 'mmsi', 'imo', 'companyName', 'vesselType'].map((fieldName: string) => ({ field: fieldName})),
+            columnDefs: ['name', 'mmsi', 'imo', 'companyName', 'vesselType'].map((fieldName: string) => ({ field: fieldName })),
         };
     }
 

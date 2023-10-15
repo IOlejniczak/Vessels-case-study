@@ -20,7 +20,7 @@ import { DataAccessModule } from '@angular-monorepo/data-access';
         RouterModule.forRoot(appRoutes),
         StoreModule.forRoot({}),
         EffectsModule.forRoot([]),
-        DataAccessModule
+        DataAccessModule,
     ],
     providers: [],
     bootstrap: [AppComponent],

@@ -7,7 +7,7 @@ import { Emission, Vessel } from './api-models';
 const API_URL = 'https://frontendteamfiles.blob.core.windows.net/exercises';
 
 @Injectable({
-    providedIn: 'root'
+    providedIn: 'root',
 })
 export class DataAccessService {
 

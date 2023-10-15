@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { filter, map, skipWhile, take, tap } from 'rxjs';
+import { filter, map, skipWhile, take } from 'rxjs';
 import * as Highcharts from 'highcharts';
 import BrandDarkTheme from 'highcharts/themes/brand-dark';
-import { DateTime } from "luxon";
+import { DateTime } from 'luxon';
 
 import { VesselsFacade, EmissionReport, Vessel } from '@angular-monorepo/data-access';
 
@@ -33,7 +33,7 @@ export class EmissionsViewComponent implements OnInit {
     selectedVessel: Vessel;
 
     constructor(
-        public vesselsFacade: VesselsFacade
+        public vesselsFacade: VesselsFacade,
     ) { }
 
     ngOnInit(): void {
@@ -45,7 +45,7 @@ export class EmissionsViewComponent implements OnInit {
                 this.selectedVessel = vessels[0];
                 this.vesselsToView = vessels;
                 this.vesselsFacade.selectedVesselById(this.selectedVessel.id);
-            }
+            },
         });
 
         this.vesselsFacade.emissionsForVessel$.pipe(
@@ -61,12 +61,12 @@ export class EmissionsViewComponent implements OnInit {
         this.vesselsFacade.selectedVesselById(this.selectedVessel.id);
     }
 
-    trackByFn(index: any): void {
+    trackByFn(index: number): number {
         return index;
     }
 
     private mapEmissions(emissionReports: EmissionReport[]): EmissionChartData {
-        let params = {
+        const params = {
             ch4_emissions: [],
             nox_emissions: [],
             pm_emissions: [],
@@ -102,14 +102,14 @@ export class EmissionsViewComponent implements OnInit {
                 {
                     data: chartData.sox_emissions,
                     name: 'SOx',
-                }
+                },
             ],
             xAxis: {
-                type: 'datetime'
+                type: 'datetime',
             },
             title: {
-                text: `${this.selectedVessel.name} Emissions`
+                text: `${this.selectedVessel.name} Emissions`,
             },
-        } as any;
+        } as object;
     }
 }

@@ -8,8 +8,8 @@ import { HomeViewComponent } from './home-view/home-view.component';
 const routes: Routes = [
     {
         path: '',
-        component: HomeViewComponent
-    }
+        component: HomeViewComponent,
+    },
 ];
 
 @NgModule({
@@ -19,10 +19,10 @@ const routes: Routes = [
         UiModule,
     ],
     declarations: [
-        HomeViewComponent
+        HomeViewComponent,
     ],
     exports: [
-        RouterModule
+        RouterModule,
     ],
 })
 export class FeatureHomeModule {}

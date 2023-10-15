@@ -14,8 +14,8 @@ import { EmissionsViewComponent } from './emissions-view/emissions-view.componen
 const routes: Routes = [
     {
         path: '',
-        component: EmissionsViewComponent
-    }
+        component: EmissionsViewComponent,
+    },
 ];
 
 @NgModule({
@@ -32,6 +32,6 @@ const routes: Routes = [
     ],
     exports: [
         RouterModule,
-    ]
+    ],
 })
 export class FeatureEmissionsModule { }

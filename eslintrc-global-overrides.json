@@ -1,0 +1,24 @@
+{
+    "overrides": [
+        {
+            "files": [
+                "*.ts"
+            ],
+            "rules": {
+                "indent": ["error", 4],
+                "no-multi-spaces": "error",
+                "no-unused-private-class-members": "error",
+                "curly": ["error", "multi"],
+                "dot-notation": "error",
+                "eqeqeq": "error",
+                "prefer-const": "error",
+                "prefer-template": "error",
+                "brace-style": ["error", "1tbs", { "allowSingleLine": true }],
+                "comma-dangle": ["error", "always-multiline"],
+                "max-len": ["error", { "code": 140 }],
+                "object-curly-spacing": ["error", "always"],
+                "quotes": ["error", "single"]
+            }
+        }
+    ]
+}

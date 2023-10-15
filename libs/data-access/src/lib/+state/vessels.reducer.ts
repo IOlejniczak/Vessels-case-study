@@ -10,7 +10,7 @@ export interface VesselsState {
     emissions: Emission[];
     vessels: Vessel[];
     selectedId?: number;
-    error?: any;
+    error?: object;
 }
 
 export const initialState: VesselsState = {
@@ -25,15 +25,15 @@ export const vesselsReducer = createReducer(
     on(fromVesselsActions.vesselsLoaded, (state, { payload }) => ({
         ...state,
         vessels: payload,
-        vesselsLoaded: true
+        vesselsLoaded: true,
     })),
     on(fromVesselsActions.emissionsLoaded, (state, { payload }) => ({
         ...state,
         emissions: payload,
-        emissionsLoaded: true
+        emissionsLoaded: true,
     })),
     on(fromVesselsActions.selectVesselId, (state, { id }) => ({
         ...state,
-        selectedId: id
-    }))
+        selectedId: id,
+    })),
 );

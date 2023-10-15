@@ -10,7 +10,7 @@ import { VesselsFacade } from './+state/vessels.facade';
 @NgModule({
     imports: [
         CommonModule,
-        HttpClientModule
+        HttpClientModule,
     ],
     providers: [
         {
