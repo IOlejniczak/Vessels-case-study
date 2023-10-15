@@ -1,0 +1,33 @@
+{
+    "compileOnSave": false,
+    "compilerOptions": {
+        "rootDir": ".",
+        "sourceMap": true,
+        "declaration": false,
+        "moduleResolution": "node",
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "strictPropertyInitialization": false,
+        "importHelpers": true,
+        "target": "es2015",
+        "module": "esnext",
+        "lib": ["es2020", "dom"],
+        "skipLibCheck": true,
+        "skipDefaultLibCheck": true,
+        "baseUrl": ".",
+        "paths": {
+            "@angular-monorepo/data-access": ["libs/data-access/src/index.ts"],
+            "@angular-monorepo/feature/feature-emissions": [
+                "libs/feature/feature-emissions/src/index.ts"
+            ],
+            "@angular-monorepo/feature/feature-home": [
+                "libs/feature/feature-home/src/index.ts"
+            ],
+            "@angular-monorepo/feature/feature-vessels": [
+                "libs/feature/feature-vessels/src/index.ts"
+            ],
+            "@angular-monorepo/ui": ["libs/ui/src/index.ts"]
+        }
+    },
+    "exclude": ["node_modules", "tmp"]
+}

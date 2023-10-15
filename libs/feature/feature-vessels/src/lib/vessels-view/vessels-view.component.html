@@ -1,0 +1,13 @@
+<section class="vessels-container">
+    <div class="vessels-header">
+        <h2> Vessels </h2>
+    </div>
+
+    <ag-grid-angular
+        class="ag-theme-balham-dark vessels-grid"
+        [rowData]="$vesselsData | async"
+        [gridOptions]="gridOptions"
+        (gridReady)="onGridReady()">
+    </ag-grid-angular>
+</section>
+

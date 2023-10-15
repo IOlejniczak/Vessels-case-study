@@ -1,0 +1,9 @@
+.nav-bar {
+    display: flex;
+    gap: var(--small-rem);
+    background-color: var(--white-opacity-05);
+    margin: var(--medium-rem) var(--large-rem);
+    padding: var(--small-rem) var(--medium-rem);
+    border-radius: var(--large-radius);
+    list-style-type: none;
+}

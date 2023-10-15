@@ -1,0 +1,8 @@
+.router-outlet-container {
+    max-height: 70vh;
+    background-color: var(--white-opacity-05);
+    margin: var(--medium-rem);
+    padding: var(--medium-rem);
+    border-radius: var(--large-radius);
+    overflow: auto;
+}

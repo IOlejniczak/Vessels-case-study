@@ -1,0 +1,22 @@
+.home-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    gap: var(--extra-large-rem);
+    cursor: default;
+
+    .welcome-note {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 50vh;
+        background-color: var(--blue);
+        border-radius: var(--large-radius);
+        overflow: auto;
+
+        ul {
+            line-height: 2;
+        }
+    }
+}

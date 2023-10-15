@@ -1,0 +1,104 @@
+@import "ag-grid-community/styles/ag-grid.css";
+@import "ag-grid-community/styles/ag-theme-balham";
+
+body {
+    font-family: "Roboto", sans-serif;
+    color: var(--off-white);
+    background-color: var(--navy);
+}
+
+html,
+body {
+    height: auto;
+    max-height: 90vh;
+    margin: 0;
+}
+
+:root {
+    --navy: #0d0c1d;
+    --dark-blue-transparent: #161b3333;
+    --blue: #474973;
+    --light-blue: #a69cac;
+    --off-white: #f1dac4;
+    --white: white;
+    --white-opacity-05: rgba(256, 256, 256, 0.05);
+
+    --small-rem: 1rem;
+    --medium-rem: 2rem;
+    --large-rem: 5rem;
+    --extra-large-rem: 10rem;
+
+    --small-radius: 5px;
+    --medium-radius: 10px;
+    --large-radius: 15px;
+
+    --box-shadow: 0px 2px 0px 1px var(--off-white);
+}
+
+.link {
+    width: fit-content;
+    margin: var(--small-rem);
+    border-radius: var(--medium-radius);
+    background-color: var(--white-opacity-05);
+    transition: all 0.3s ease;
+
+    a {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        padding: var(--small-rem) var(--medium-rem);
+        color: var(--off-white);
+        text-decoration: none;
+    }
+
+    &:hover,
+    &:has(a.active-link) {
+        background-color: var(--blue);
+        box-shadow: var(--box-shadow);
+    }
+}
+
+.view-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--small-rem);
+    padding: 0 var(--medium-rem);
+    border-radius: var(--medium-radius) var(--medium-radius) 0 0;
+    background-color: var(--white-opacity-05);
+}
+
+.badge {
+    font-size: 12px;
+    margin-left: 15px;
+    padding: 2px 10px;
+    color: var(--white);
+    border: 1px solid var(--white);
+    border-radius: var(--medium-radius);
+    background-color: var(--dark-blue-transparent);
+}
+
+.vessels-container div.ag-root-wrapper {
+    border: none;
+    border-radius: 0 0 var(--medium-radius) var(--medium-radius) !important;
+}
+
+h3 {
+    font-weight: normal;
+    text-decoration: underline;
+}
+
+select {
+    padding: 5px 10px;
+    border: none;
+    border-radius: var(--small-radius);
+    font-family: Roboto;
+    font-size: 15px;
+    color: var(--white);
+    background-color: var(--blue);
+    box-shadow: var(--box-shadow);
+}
+
+.justify-self-end {
+    justify-self: end;
+}
