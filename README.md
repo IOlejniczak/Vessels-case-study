@@ -1,5 +1,5 @@
 # Vessels-case-study
-A simple Angular web app using nx monorepo solution and ngrx store. It constists of a homepage, vessels page and emissions page.
+A simple Angular web app using nx monorepo solution and ngrx store. It constists of a homepage, vessels page and emissions page and it's goal is to display different vessel-related data - vessels are depicted in an Ag-Grid table and vessel emissions are displayed with chart.
 
 ## Tech stack
 - **Angular** - v.16.2.0
